@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>美国地址生成器｜在线生成真实的美国地址、邮编、电话 - 支持全部50州</title>
+  <meta name="description" content="免费在线生成美国全部50州真实地址和身份信息示例数据，支持免税州和所有其他州。随机生成姓名、地址、邮编和电话，适用于开发测试、电商表单测试。">
+  <meta name="keywords" content="美国地址生成器,免税州地址,美国地址,随机地址生成,美国邮编,地址生成器在线,50州地址">
+  <meta property="og:title" content="美国地址生成器｜在线生成真实的美国地址、邮编、电话 - 支持全部50州">
+  <meta property="og:description" content="免费在线生成美国全部50州真实地址和身份信息示例数据">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📍</text></svg>">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-brand">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+        <circle cx="12" cy="10" r="3" />
+      </svg>
+      AddressGen
+    </a>
+    <ul class="nav-links">
+      <li><a href="#" class="active">美国地址</a></li>
+      <li><a href="#faq">常见问题</a></li>
+      <li><a href="#info">地址说明</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-container">
+
+    <!-- Hero Section -->
+    <section class="hero animate-in" id="hero">
+      <div class="hero-left">
+        <h1 class="hero-title">
+          美国<span class="highlight">地址</span>在线生成器
+        </h1>
+        <p class="hero-desc">
+          免费在线生成美国全部50州真实地址数据和身份信息示例数据，支持免税州（阿拉斯加、特拉华、蒙大拿、新罕布什尔、俄勒冈）及所有其他州。生成姓名、地址、邮编和电话，适用于开发测试、电商表单测试和学习使用。
+        </p>
+        <div class="hero-badges">
+          <span class="badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M20 6L9 17l-5-5" />
+            </svg>
+            免费使用
+          </span>
+          <span class="badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M20 6L9 17l-5-5" />
+            </svg>
+            地址真实
+          </span>
+          <span class="badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M20 6L9 17l-5-5" />
+            </svg>
+            一键复制
+          </span>
+        </div>
+      </div>
+
+      <div class="config-card">
+        <div>
+          <label class="config-label">选择州</label>
+          <select class="state-select" id="stateSelect">
+            <optgroup label="⭐ 免税州 (Tax-Free States)">
+              <option value="AK">阿拉斯加州 (Alaska)</option>
+              <option value="DE" selected>特拉华州 (Delaware)</option>
+              <option value="MT">蒙大拿州 (Montana)</option>
+              <option value="NH">新罕布什尔州 (New Hampshire)</option>
+              <option value="OR">俄勒冈州 (Oregon)</option>
+            </optgroup>
+            <optgroup label="── 其他州 (Other States) ──">
+              <option value="AL">阿拉巴马州 (Alabama)</option>
+              <option value="AZ">亚利桑那州 (Arizona)</option>
+              <option value="AR">阿肯色州 (Arkansas)</option>
+              <option value="CA">加利福尼亚州 (California)</option>
+              <option value="CO">科罗拉多州 (Colorado)</option>
+              <option value="CT">康涅狄格州 (Connecticut)</option>
+              <option value="FL">佛罗里达州 (Florida)</option>
+              <option value="GA">乔治亚州 (Georgia)</option>
+              <option value="HI">夏威夷州 (Hawaii)</option>
+              <option value="ID">爱达荷州 (Idaho)</option>
+              <option value="IL">伊利诺伊州 (Illinois)</option>
+              <option value="IN">印第安纳州 (Indiana)</option>
+              <option value="IA">爱荷华州 (Iowa)</option>
+              <option value="KS">堪萨斯州 (Kansas)</option>
+              <option value="KY">肯塔基州 (Kentucky)</option>
+              <option value="LA">路易斯安那州 (Louisiana)</option>
+              <option value="ME">缅因州 (Maine)</option>
+              <option value="MD">马里兰州 (Maryland)</option>
+              <option value="MA">马萨诸塞州 (Massachusetts)</option>
+              <option value="MI">密歇根州 (Michigan)</option>
+              <option value="MN">明尼苏达州 (Minnesota)</option>
+              <option value="MS">密西西比州 (Mississippi)</option>
+              <option value="MO">密苏里州 (Missouri)</option>
+              <option value="NE">内布拉斯加州 (Nebraska)</option>
+              <option value="NV">内华达州 (Nevada)</option>
+              <option value="NJ">新泽西州 (New Jersey)</option>
+              <option value="NM">新墨西哥州 (New Mexico)</option>
+              <option value="NY">纽约州 (New York)</option>
+              <option value="NC">北卡罗来纳州 (North Carolina)</option>
+              <option value="ND">北达科他州 (North Dakota)</option>
+              <option value="OH">俄亥俄州 (Ohio)</option>
+              <option value="OK">俄克拉荷马州 (Oklahoma)</option>
+              <option value="PA">宾夕法尼亚州 (Pennsylvania)</option>
+              <option value="RI">罗德岛州 (Rhode Island)</option>
+              <option value="SC">南卡罗来纳州 (South Carolina)</option>
+              <option value="SD">南达科他州 (South Dakota)</option>
+              <option value="TN">田纳西州 (Tennessee)</option>
+              <option value="TX">德克萨斯州 (Texas)</option>
+              <option value="UT">犹他州 (Utah)</option>
+              <option value="VT">佛蒙特州 (Vermont)</option>
+              <option value="VA">弗吉尼亚州 (Virginia)</option>
+              <option value="WA">华盛顿州 (Washington)</option>
+              <option value="WV">西弗吉尼亚州 (West Virginia)</option>
+              <option value="WI">威斯康星州 (Wisconsin)</option>
+              <option value="WY">怀俄明州 (Wyoming)</option>
+              <option value="DC">华盛顿特区 (D.C.)</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="toggle-row">
+          <label class="toggle-item" for="toggleIdentity">
+            <span>生成身份信息</span>
+            <div class="toggle-switch">
+              <input type="checkbox" id="toggleIdentity">
+              <span class="toggle-slider"></span>
+            </div>
+          </label>
+          <label class="toggle-item" for="toggleCreditCard">
+            <span>生成信用卡信息</span>
+            <div class="toggle-switch">
+              <input type="checkbox" id="toggleCreditCard">
+              <span class="toggle-slider"></span>
+            </div>
+          </label>
+        </div>
+
+        <button class="btn-generate" id="btnGenerate" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M1 4v6h6" />
+            <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10" />
+          </svg>
+          生成地址
+        </button>
+      </div>
+    </section>
+
+    <!-- Result Section -->
+    <section class="result-section" id="resultSection">
+      <div class="section-header">
+        <h2 class="section-title">在线生成美国免税州真实地址数据</h2>
+        <div class="section-actions">
+          <button class="btn-action share" id="btnShare" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="18" cy="5" r="3" />
+              <circle cx="6" cy="12" r="3" />
+              <circle cx="18" cy="19" r="3" />
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+            </svg>
+            分享
+          </button>
+          <button class="btn-action save" id="btnSave" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z" />
+              <polyline points="17 21 17 13 7 13 7 21" />
+              <polyline points="7 3 7 8 15 8" />
+            </svg>
+            保存
+          </button>
+        </div>
+      </div>
+
+      <div class="result-card" id="resultCard">
+        <div class="result-empty" id="resultEmpty">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <p>点击上方按钮生成美国免税州详细地址及身份信息，<br>信用卡信息，手机号码和其他基本信息。</p>
+        </div>
+        <div class="result-grid" id="resultGrid" style="display:none;"></div>
+      </div>
+    </section>
+
+    <!-- Saved Addresses -->
+    <section class="saved-section" id="savedSection">
+      <div class="section-header">
+        <h2 class="section-title">已保存的地址</h2>
+        <div class="section-actions">
+          <button class="btn-action delete" id="btnClearAll" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="3 6 5 6 21 6" />
+              <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+            </svg>
+            全部删除
+          </button>
+          <button class="btn-action export" id="btnExport" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            导出
+          </button>
+        </div>
+      </div>
+      <div class="saved-card" id="savedCard">
+        <div class="saved-empty" id="savedEmpty">暂无保存的地址</div>
+        <div class="saved-list" id="savedList"></div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="section-header">
+        <h2 class="section-title">美国免税州地址生成器常见问题 FAQ</h2>
+      </div>
+      <div class="faq-card">
+
+        <div class="faq-item">
+          <h3 class="faq-question">什么是美国免税州地址在线生成器？</h3>
+          <p class="faq-answer">
+            美国免税州地址在线生成器是一款专业的在线生成工具，可以帮助用户快速生成符合美国邮政标准且真实的免税州地址信息。美国共有五个州不征收州级销售税，分别是阿拉斯加州、特拉华州、蒙大拿州、新罕布什尔州和俄勒冈州。特别适用于电商购物、在线服务及开发测试学习使用。
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">你们的美国免税州地址详细吗？</h3>
+          <p class="faq-answer">本工具生成的美国免税州地址包含完整字段，如州名、城市、街道、邮编和基础联系方式，符合美国 USPS
+            地址格式规范，适用于开发测试、电商表单测试和数据模拟。所有信息为随机示例数据，仅供学习和测试使用。</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">美国地址生成器俄勒冈和其它州有什么区别？</h3>
+          <p class="faq-answer">俄勒冈州（Oregon）与其他州的区别主要体现在州级销售税政策和行政区划。俄勒冈州属于美国五大免税州之一，不征收州销售税，但地址结构与美国其他州相同，包括城市、街道和 ZIP
+            Code。</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">美国免税州地址格式范例</h3>
+          <p class="faq-answer">John Doe（收件人）<br>1234 Main St, Apt 4（门牌号+街道名+公寓号）<br>Los Angeles, CA 90001（城市, 州缩写+邮编）
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">你们的美国街道地址生成器是免费的么？</h3>
+          <p class="faq-answer">美国街道地址生成器提供完全免费的在线使用服务，可随机生成完整的美国街道地址、城市、州名和 ZIP Code。适合电商表单测试、系统开发和地址格式验证。</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section" id="info">
+      <div class="section-header">
+        <h2 class="section-title">美国免税州地区介绍</h2>
+      </div>
+      <div class="info-card">
+        <h3>美国免税州介绍</h3>
+        <p>美国有多个免税州，这些州不对商品销售征收州销售税，适合电商和商业用途。</p>
+        <ul>
+          <li>阿拉斯加州 (Alaska) - 无州销售税</li>
+          <li>特拉华州 (Delaware) - 无州销售税</li>
+          <li>蒙大拿州 (Montana) - 无州销售税</li>
+          <li>新罕布什尔州 (New Hampshire) - 无州销售税</li>
+          <li>俄勒冈州 (Oregon) - 无州销售税</li>
+        </ul>
+
+        <h3>使用场景</h3>
+        <p>生成的美国免税州地址可用于多种测试和开发场景：</p>
+        <ul>
+          <li>电商平台测试</li>
+          <li>税务计算测试</li>
+          <li>表单填写测试</li>
+          <li>地址格式验证</li>
+          <li>教育和学习用途</li>
+        </ul>
+
+        <h3>美国邮编系统</h3>
+        <p>美国免税州邮编采用5位数字格式（ZIP Code），如99701（阿拉斯加），部分地址还包含4位扩展码（ZIP+4）。</p>
+
+        <h3>电话号码</h3>
+        <p>美国电话号码格式为 +1 (XXX) XXX-XXXX，包括固定电话和手机号码，区号根据州不同而变化。</p>
+
+        <h3>地址格式</h3>
+        <p>美国免税州地址通常包括门牌号、街道名、城市、州（两字母缩写）和邮编，格式规范且易于识别。</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-brand" style="margin-bottom:.5rem">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" style="width:24px;height:24px;color:var(--blue-500)">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            AddressGen
+          </a>
+          <p>全球地址生成器，为开发、测试和学习提供真实有效的地址示例数据。所有数据仅供学习和测试使用。</p>
+        </div>
+        <div>
+          <h4 class="footer-title">导航</h4>
+          <ul class="footer-links">
+            <li><a href="#">美国免税州地址</a></li>
+            <li><a href="#faq">常见问题</a></li>
+            <li><a href="#info">地址说明</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">免税州</h4>
+          <ul class="footer-links">
+            <li><a href="#" onclick="selectState('AK')">阿拉斯加州</a></li>
+            <li><a href="#" onclick="selectState('DE')">特拉华州</a></li>
+            <li><a href="#" onclick="selectState('MT')">蒙大拿州</a></li>
+            <li><a href="#" onclick="selectState('NH')">新罕布什尔州</a></li>
+            <li><a href="#" onclick="selectState('OR')">俄勒冈州</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer">
+        <p>⚠️
+          <strong>免责声明：</strong>本站生成的所有个人信息、地址、信用卡号码等数据均为完全虚构，仅基于公开格式随机生成，仅限用于合法的测试、开发、教育或演示目的。严禁用于任何非法用途，包括但不限于欺诈、身份盗用、违法交易等。使用即表示您同意本声明，并对不当使用承担全部法律责任。
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 AddressGen. 保留所有权利。</p>
+        <p>仅供学习和测试使用</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="states-data.js"></script>
+  <script src="states-data-2.js"></script>
+  <script src="real-streets.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
