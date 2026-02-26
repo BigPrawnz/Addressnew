@@ -59,8 +59,9 @@
     </a>
     <ul class="nav-links">
       <li><a href="#" class="active">美国地址</a></li>
+      <li><a href="#guide">使用指南</a></li>
       <li><a href="#faq">常见问题</a></li>
-      <li><a href="#info">地址说明</a></li>
+      <li><a href="#info">地址知识</a></li>
     </ul>
   </nav>
 
@@ -257,77 +258,463 @@
     <!-- FAQ Section -->
     <section class="faq-section" id="faq">
       <div class="section-header">
-        <h2 class="section-title">美国免税州地址生成器常见问题 FAQ</h2>
+        <h2 class="section-title">美国地址生成器常见问题 FAQ</h2>
       </div>
       <div class="faq-card">
 
         <div class="faq-item">
           <h3 class="faq-question">什么是美国免税州地址在线生成器？</h3>
           <p class="faq-answer">
-            美国免税州地址在线生成器是一款专业的在线生成工具，可以帮助用户快速生成符合美国邮政标准且真实的免税州地址信息。美国共有五个州不征收州级销售税，分别是阿拉斯加州、特拉华州、蒙大拿州、新罕布什尔州和俄勒冈州。特别适用于电商购物、在线服务及开发测试学习使用。
+            美国免税州地址在线生成器是一款专业的在线工具，可以帮助用户快速生成符合美国邮政标准（USPS）的真实地址信息。美国共有五个州不征收州级销售税，分别是阿拉斯加州（Alaska）、特拉华州（Delaware）、蒙大拿州（Montana）、新罕布什尔州（New
+            Hampshire）和俄勒冈州（Oregon）。这些州由于没有州销售税，广泛受到跨境电商、海淘用户和开发测试人员的关注。本工具特别适用于电商购物地址测试、在线服务注册测试以及软件开发中的表单验证等场景。
           </p>
         </div>
 
         <div class="faq-item">
-          <h3 class="faq-question">你们的美国免税州地址详细吗？</h3>
-          <p class="faq-answer">本工具生成的美国免税州地址包含完整字段，如州名、城市、街道、邮编和基础联系方式，符合美国 USPS
-            地址格式规范，适用于开发测试、电商表单测试和数据模拟。所有信息为随机示例数据，仅供学习和测试使用。</p>
+          <h3 class="faq-question">生成的美国地址包含哪些信息？</h3>
+          <p class="faq-answer">
+            本工具生成的美国地址包含完整字段，具体包括：<strong>姓名</strong>（随机生成的英文姓名）、<strong>街道地址</strong>（包含门牌号、街道名称和公寓号）、<strong>城市</strong>（对应州的真实城市名称）、<strong>州名</strong>（全称和两字母缩写）、<strong>邮编</strong>（符合该州实际邮编范围的5位
+            ZIP Code）、<strong>电话号码</strong>（包含对应州区号的有效格式号码）。开启身份信息选项后还可以生成 SSN 格式示例、出生日期等辅助信息。开启信用卡选项可生成符合 Luhn
+            算法校验的测试卡号。所有数据均为随机生成的示例数据，仅供学习和测试使用。</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">美国地址的组成部分有哪些？</h3>
+          <p class="faq-answer">一个标准的美国地址由以下部分组成：<br>
+            <strong>第一行 - 收件人姓名：</strong>如 John Smith<br>
+            <strong>第二行 - 街道地址：</strong>包括门牌号（House Number）、街道名称（Street Name）、街道类型后缀（如 St、Ave、Blvd、Dr、Ln
+            等）以及可选的公寓/套房号（Apt、Suite、Unit 等）<br>
+            <strong>第三行 - 城市、州和邮编：</strong>格式为"City, ST ZIP"，其中 ST 为两字母州缩写（如 CA 代表加利福尼亚州），ZIP 为5位邮政编码<br>
+            例如：1234 Main St, Apt 4, Portland, OR 97201。美国邮政服务（USPS）制定了严格的地址格式标准，确保邮件能够准确投递。
+          </p>
         </div>
 
         <div class="faq-item">
           <h3 class="faq-question">美国地址生成器俄勒冈和其它州有什么区别？</h3>
-          <p class="faq-answer">俄勒冈州（Oregon）与其他州的区别主要体现在州级销售税政策和行政区划。俄勒冈州属于美国五大免税州之一，不征收州销售税，但地址结构与美国其他州相同，包括城市、街道和 ZIP
-            Code。</p>
+          <p class="faq-answer">俄勒冈州（Oregon）与其他州的区别主要体现在税收政策上。俄勒冈州属于美国五大免税州之一，不征收州级销售税（State Sales
+            Tax），这意味着在俄勒冈州购买商品无需额外缴纳消费税。相比之下，加州的综合销售税率可高达10.25%，纽约州也在8%左右。在地址结构上，俄勒冈州与其他州完全一致，都包含街道地址、城市、州缩写（OR）和 ZIP
+            Code。俄勒冈州的主要城市有波特兰（Portland）、尤金（Eugene）、塞勒姆（Salem，州首府）等，邮编范围一般为 97000-97999。</p>
         </div>
 
         <div class="faq-item">
-          <h3 class="faq-question">美国免税州地址格式范例</h3>
-          <p class="faq-answer">John Doe（收件人）<br>1234 Main St, Apt 4（门牌号+街道名+公寓号）<br>Los Angeles, CA 90001（城市, 州缩写+邮编）
+          <h3 class="faq-question">什么是 ZIP Code？ZIP+4 又是什么？</h3>
+          <p class="faq-answer">ZIP Code 是美国邮政服务（USPS）使用的邮政编码系统，由5位数字组成。ZIP 是 "Zone Improvement Plan"
+            的缩写，于1963年启用，用于提高邮件分拣和投递效率。<br><br>
+            ZIP Code 的第一位数字代表美国的一个大区域（0-9），从东到西依次递增。例如，以"0"开头的邮编位于东北部（如纽约、新泽西），以"9"开头的位于西部（如加利福尼亚、俄勒冈、华盛顿）。<br><br>
+            <strong>ZIP+4</strong> 是在标准5位邮编基础上增加4位数字（用连字符分隔），如
+            97201-1234。这额外的4位数字可以定位到更精确的投递区域，通常对应一个街区的一侧、一栋公寓楼、一个大型建筑的某一层，甚至是一个 PO Box。使用 ZIP+4 可以加快邮件分拣速度并提高投递准确性。
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">美国各州的电话区号是怎么分配的？</h3>
+          <p class="faq-answer">美国电话号码采用 <strong>+1 (XXX) XXX-XXXX</strong> 的格式，其中 "+1" 是美国的国际电话区号，括号中的3位数字是地区区号（Area
+            Code）。每个州至少有一个区号，人口多的州则有多个。例如：加利福尼亚州有超过30个区号（如213、310、415、510、818等）；纽约州有212、718、516等区号；俄勒冈州主要使用503和541区号；特拉华州只有一个区号302。区号的分配由北美编号计划管理局（NANPA）管理，随着电话用户增加，新的区号会被不断引入。本工具生成的电话号码会自动匹配所选州的真实区号。
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">生成的地址可以用来做什么？</h3>
+          <p class="faq-answer">本工具生成的地址适用于多种合法场景：<br>
+            <strong>1. 软件开发测试：</strong>前端表单验证、地址自动填充功能测试、API 接口调试<br>
+            <strong>2. 电商平台测试：</strong>模拟下单流程、测试运费计算、验证地址校验逻辑<br>
+            <strong>3. 税务系统测试：</strong>验证不同州的销售税计算是否正确，特别是免税州的零税率处理<br>
+            <strong>4. 教育学习：</strong>了解美国地址格式、学习各州地理信息、研究美国邮政系统<br>
+            <strong>5. UI/UX 设计：</strong>制作原型时填充真实感的地址示例数据<br>
+            ⚠️ 请注意：生成的数据仅供测试和学习用途，严禁用于任何欺诈或非法目的。
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">美国地址和中国地址有什么区别？</h3>
+          <p class="faq-answer">中美地址格式存在显著差异：<br>
+            <strong>书写顺序相反：</strong>中国地址从大到小（省→市→区→街道→门牌号），美国地址从小到大（门牌号→街道→城市→州→邮编）<br>
+            <strong>邮编格式不同：</strong>中国邮编为6位纯数字（如 100000），美国为5位（如 97201）或9位 ZIP+4 格式（如 97201-1234）<br>
+            <strong>州的概念：</strong>美国的 "State"（州）类似中国的省份，有50个州和1个特区（华盛顿 D.C.），每个州用两个字母缩写表示<br>
+            <strong>街道命名规则：</strong>美国街道名称通常更多样，包含方向前缀（N、S、E、W）、数字街名（如 5th Avenue）和各种后缀（St、Ave、Blvd、Dr、Ct 等）<br>
+            <strong>公寓号表示：</strong>美国习惯用 Apt、Suite、Unit 等词加编号表示，通常写在街道地址之后
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">美国街道地址中 St、Ave、Blvd 等缩写是什么意思？</h3>
+          <p class="faq-answer">这些是美国街道类型的标准缩写，由 USPS 规定。常见的街道类型缩写包括：<br>
+            <strong>St (Street)</strong> - 街，最常见的街道类型<br>
+            <strong>Ave (Avenue)</strong> - 大道，通常比 Street 更宽<br>
+            <strong>Blvd (Boulevard)</strong> - 林荫大道，通常有中间隔离带<br>
+            <strong>Dr (Drive)</strong> - 驱车道，通常蜿蜒曲折<br>
+            <strong>Ln (Lane)</strong> - 小巷/小路，通常较窄<br>
+            <strong>Ct (Court)</strong> - 死胡同/环形路，通常位于住宅区<br>
+            <strong>Pl (Place)</strong> - 小广场或短路<br>
+            <strong>Rd (Road)</strong> - 公路/道路<br>
+            <strong>Way</strong> - 小径<br>
+            <strong>Cir (Circle)</strong> - 环形道路<br>
+            在正式邮寄地址中，USPS 建议使用标准缩写以确保邮件正确投递。本工具生成的地址均使用这些标准缩写。
           </p>
         </div>
 
         <div class="faq-item">
           <h3 class="faq-question">你们的美国街道地址生成器是免费的么？</h3>
-          <p class="faq-answer">美国街道地址生成器提供完全免费的在线使用服务，可随机生成完整的美国街道地址、城市、州名和 ZIP Code。适合电商表单测试、系统开发和地址格式验证。</p>
+          <p class="faq-answer">是的，AddressGen 美国地址生成器提供完全免费的在线使用服务，无需注册账号，无使用次数限制。您可以随时随机生成完整的美国50州地址数据，包括街道地址、城市、州名、ZIP
+            Code 和电话号码。工具还支持保存已生成的地址、一键复制和导出功能，方便您在不同场景中使用。我们致力于为开发者、测试人员和学习者提供便捷的地址数据生成服务。</p>
         </div>
 
+        <div class="faq-item">
+          <h3 class="faq-question">生成的地址是真实存在的吗？</h3>
+          <p class="faq-answer">本工具使用真实的城市名称、合理的邮编范围和常见的街道名称进行随机组合，因此生成的地址在格式上完全符合 USPS
+            标准，看起来非常真实。但具体的门牌号和街道组合是随机生成的，<strong>不一定指向真实存在的住所</strong>。这种设计是有意为之的——既保证了地址格式的准确性和可用性（用于测试和验证），又避免了使用真实个人地址可能带来的隐私问题。如果您需要验证某个真实地址是否存在，可以使用
+            USPS 官方的地址验证工具（USPS Address Verification）。</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">本工具的数据安全性如何？</h3>
+          <p class="faq-answer">AddressGen 非常重视用户隐私和数据安全。我们的核心设计原则是：<br>
+            <strong>1. 纯客户端运行：</strong>所有地址生成逻辑完全在您的浏览器中运行，不会将任何数据发送到服务器<br>
+            <strong>2. 无账号系统：</strong>无需注册或登录，不收集任何个人信息<br>
+            <strong>3. 本地存储：</strong>保存的地址数据仅存储在您浏览器的 localStorage 中，关闭浏览器或清除缓存后即可删除<br>
+            <strong>4. HTTPS 加密：</strong>网站通过 HTTPS 协议传输，确保浏览过程的安全性<br>
+            详细信息请查阅我们的<a href="privacy.html">隐私政策</a>页面。
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- How to Use Guide -->
+    <section class="guide-section" id="guide">
+      <div class="section-header">
+        <h2 class="section-title">如何使用美国地址生成器</h2>
+      </div>
+      <div class="guide-steps">
+        <div class="guide-step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>选择目标州</h3>
+            <p>在页面顶部的下拉菜单中选择你需要的美国州。免税州（阿拉斯加、特拉华、蒙大拿、新罕布什尔、俄勒冈）位于列表顶部并标有⭐，方便快速选择。你也可以选择其他任意州来生成对应的地址数据。</p>
+          </div>
+        </div>
+        <div class="guide-step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>选择生成内容</h3>
+            <p>根据需要开启额外选项：<strong>"生成身份信息"</strong>可以生成包含姓名、SSN 格式示例、出生日期等模拟身份数据；<strong>"生成信用卡信息"</strong>可以生成符合 Luhn
+              校验算法的测试信用卡号、有效期和 CVV。这些数据均为随机生成，仅供测试使用。</p>
+          </div>
+        </div>
+        <div class="guide-step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>生成地址</h3>
+            <p>点击蓝色的<strong>"生成地址"</strong>按钮，系统将立即在下方展示一组完整的美国地址信息，包括街道、城市、州名、邮编和电话号码。每次点击都会生成全新的随机数据，你可以反复生成直到得到满意的结果。
+            </p>
+          </div>
+        </div>
+        <div class="guide-step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>复制、保存或导出</h3>
+            <p>
+              每一项生成的信息右侧都有<strong>复制按钮</strong>，点击即可一键复制到剪贴板。你还可以使用<strong>"保存"</strong>按钮将地址保存到本地（存储在浏览器中），或使用<strong>"导出"</strong>功能将保存的所有地址导出为文本文件，方便在其他项目中使用。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tax-Free State Comparison -->
+    <section class="compare-section" id="compare">
+      <div class="section-header">
+        <h2 class="section-title">美国五大免税州详细对比</h2>
+      </div>
+      <div class="info-card">
+        <p>以下表格对比了美国五个不征收州级销售税的州的关键信息，帮助您了解它们之间的差异和特点。</p>
+        <div class="table-wrapper">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>州名</th>
+                <th>缩写</th>
+                <th>首府</th>
+                <th>最大城市</th>
+                <th>人口（约）</th>
+                <th>面积排名</th>
+                <th>邮编范围</th>
+                <th>主要区号</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>阿拉斯加</strong><br>Alaska</td>
+                <td>AK</td>
+                <td>朱诺<br>Juneau</td>
+                <td>安克雷奇<br>Anchorage</td>
+                <td>73万</td>
+                <td>第1（最大）</td>
+                <td>995xx-999xx</td>
+                <td>907</td>
+              </tr>
+              <tr>
+                <td><strong>特拉华</strong><br>Delaware</td>
+                <td>DE</td>
+                <td>多佛<br>Dover</td>
+                <td>威尔明顿<br>Wilmington</td>
+                <td>100万</td>
+                <td>第49</td>
+                <td>197xx-199xx</td>
+                <td>302</td>
+              </tr>
+              <tr>
+                <td><strong>蒙大拿</strong><br>Montana</td>
+                <td>MT</td>
+                <td>海伦娜<br>Helena</td>
+                <td>比灵斯<br>Billings</td>
+                <td>110万</td>
+                <td>第4</td>
+                <td>590xx-599xx</td>
+                <td>406</td>
+              </tr>
+              <tr>
+                <td><strong>新罕布什尔</strong><br>New Hampshire</td>
+                <td>NH</td>
+                <td>康科德<br>Concord</td>
+                <td>曼彻斯特<br>Manchester</td>
+                <td>140万</td>
+                <td>第46</td>
+                <td>030xx-038xx</td>
+                <td>603</td>
+              </tr>
+              <tr>
+                <td><strong>俄勒冈</strong><br>Oregon</td>
+                <td>OR</td>
+                <td>塞勒姆<br>Salem</td>
+                <td>波特兰<br>Portland</td>
+                <td>430万</td>
+                <td>第9</td>
+                <td>970xx-979xx</td>
+                <td>503, 541, 971</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 
     <!-- Info Section -->
     <section class="info-section" id="info">
       <div class="section-header">
-        <h2 class="section-title">美国免税州地区介绍</h2>
+        <h2 class="section-title">美国免税州详细介绍与地址知识</h2>
       </div>
       <div class="info-card">
-        <h3>美国免税州介绍</h3>
-        <p>美国有多个免税州，这些州不对商品销售征收州销售税，适合电商和商业用途。</p>
-        <ul>
-          <li>阿拉斯加州 (Alaska) - 无州销售税</li>
-          <li>特拉华州 (Delaware) - 无州销售税</li>
-          <li>蒙大拿州 (Montana) - 无州销售税</li>
-          <li>新罕布什尔州 (New Hampshire) - 无州销售税</li>
-          <li>俄勒冈州 (Oregon) - 无州销售税</li>
-        </ul>
+        <h3>🏔️ 阿拉斯加州 (Alaska, AK)</h3>
+        <p>
+          阿拉斯加是美国面积最大的州，位于北美大陆西北端，与加拿大接壤。它于1959年成为美国第49个州。阿拉斯加不征收州级销售税和个人所得税，是美国税负最低的州之一。该州以壮丽的自然风光闻名，拥有北美最高峰德纳利山（Denali，海拔6190米）、广阔的冰川和丰富的野生动物资源。主要经济来源包括石油开采、渔业和旅游业。阿拉斯加还有独特的"永久基金分红"计划（PFD），每年向每位居民发放石油收入分红。
+        </p>
 
-        <h3>使用场景</h3>
-        <p>生成的美国免税州地址可用于多种测试和开发场景：</p>
-        <ul>
-          <li>电商平台测试</li>
-          <li>税务计算测试</li>
-          <li>表单填写测试</li>
-          <li>地址格式验证</li>
-          <li>教育和学习用途</li>
-        </ul>
+        <h3>🏛️ 特拉华州 (Delaware, DE)</h3>
+        <p>特拉华州位于美国东海岸，是面积第二小、人口第六少的州，但在商业领域却举足轻重。它是第一个批准美国宪法的州（1787年），因此被称为"第一州"（The First
+          State）。特拉华州不仅没有州销售税，还以其对企业极为友好的法律体系著称——超过65%的美国《财富》500强公司在特拉华州注册。该州的特拉华衡平法院（Court of
+          Chancery）是美国最重要的商业法院之一，为企业纠纷提供专业的法律裁判。威尔明顿是其最大城市和金融中心。</p>
 
-        <h3>美国邮编系统</h3>
-        <p>美国免税州邮编采用5位数字格式（ZIP Code），如99701（阿拉斯加），部分地址还包含4位扩展码（ZIP+4）。</p>
+        <h3>🦌 蒙大拿州 (Montana, MT)</h3>
+        <p>
+          蒙大拿州位于美国西北部，是面积第四大的州，以其广阔的平原、壮丽的落基山脉和丰富的自然资源闻名。州名来自西班牙语"montaña"（意为"山"）。蒙大拿不征收州销售税，且个人所得税率相对较低。该州拥有两个世界著名的国家公园：冰川国家公园（Glacier
+          National Park）和黄石国家公园（Yellowstone National Park，部分位于蒙大拿）。主要经济产业包括农业（小麦、牛肉）、采矿、林业和旅游业。蒙大拿的人口密度极低，平均每平方英里仅约7人。
+        </p>
 
-        <h3>电话号码</h3>
-        <p>美国电话号码格式为 +1 (XXX) XXX-XXXX，包括固定电话和手机号码，区号根据州不同而变化。</p>
+        <h3>🍁 新罕布什尔州 (New Hampshire, NH)</h3>
+        <p>新罕布什尔州位于美国东北部的新英格兰地区，以其美丽的秋季红叶和滑雪胜地闻名。该州的格言是"不自由，毋宁死"（Live Free or
+          Die），充分反映了其追求自由和低税负的传统。新罕布什尔不征收州销售税和个人所得税（仅对利息和分红收入征税），是美国税负最低的州之一。该州在美国总统大选中具有重要地位，因为它是每次大选中第一个举行初选的州。主要城市包括曼彻斯特、纳舒厄和州首府康科德。经济以高科技、制造业和旅游业为主。
+        </p>
 
-        <h3>地址格式</h3>
-        <p>美国免税州地址通常包括门牌号、街道名、城市、州（两字母缩写）和邮编，格式规范且易于识别。</p>
+        <h3>🌲 俄勒冈州 (Oregon, OR)</h3>
+        <p>俄勒冈州位于美国太平洋西北部，以其多样的地理景观和环保意识闻名。从太平洋海岸线到喀斯喀特山脉（Cascade
+          Range），再到东部的沙漠地带，地形变化丰富。俄勒冈不征收州销售税，但有相对较高的个人所得税率（最高约9.9%）。波特兰是其最大城市，以文化多元、精酿啤酒和美食闻名，被称为"保持怪异"（Keep Portland
+          Weird）的城市。俄勒冈还是美国为数不多的全自助加油违法的州之一（尽管近年有所放宽）。该州的经济支柱包括高科技（硅林 Silicon Forest）、林业、农业和旅游业。</p>
+
+        <h3>📋 美国全部50州缩写对照表</h3>
+        <p>以下是美国50个州和华盛顿特区的两字母缩写对照表，这些缩写由 USPS 标准化制定，在邮寄地址中必须使用：</p>
+        <div class="table-wrapper">
+          <table class="abbr-table">
+            <thead>
+              <tr>
+                <th>州名</th>
+                <th>缩写</th>
+                <th>州名</th>
+                <th>缩写</th>
+                <th>州名</th>
+                <th>缩写</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Alabama</td>
+                <td>AL</td>
+                <td>Kentucky</td>
+                <td>KY</td>
+                <td>North Dakota</td>
+                <td>ND</td>
+              </tr>
+              <tr>
+                <td>Alaska</td>
+                <td>AK</td>
+                <td>Louisiana</td>
+                <td>LA</td>
+                <td>Ohio</td>
+                <td>OH</td>
+              </tr>
+              <tr>
+                <td>Arizona</td>
+                <td>AZ</td>
+                <td>Maine</td>
+                <td>ME</td>
+                <td>Oklahoma</td>
+                <td>OK</td>
+              </tr>
+              <tr>
+                <td>Arkansas</td>
+                <td>AR</td>
+                <td>Maryland</td>
+                <td>MD</td>
+                <td>Oregon</td>
+                <td>OR</td>
+              </tr>
+              <tr>
+                <td>California</td>
+                <td>CA</td>
+                <td>Massachusetts</td>
+                <td>MA</td>
+                <td>Pennsylvania</td>
+                <td>PA</td>
+              </tr>
+              <tr>
+                <td>Colorado</td>
+                <td>CO</td>
+                <td>Michigan</td>
+                <td>MI</td>
+                <td>Rhode Island</td>
+                <td>RI</td>
+              </tr>
+              <tr>
+                <td>Connecticut</td>
+                <td>CT</td>
+                <td>Minnesota</td>
+                <td>MN</td>
+                <td>South Carolina</td>
+                <td>SC</td>
+              </tr>
+              <tr>
+                <td>Delaware</td>
+                <td>DE</td>
+                <td>Mississippi</td>
+                <td>MS</td>
+                <td>South Dakota</td>
+                <td>SD</td>
+              </tr>
+              <tr>
+                <td>Florida</td>
+                <td>FL</td>
+                <td>Missouri</td>
+                <td>MO</td>
+                <td>Tennessee</td>
+                <td>TN</td>
+              </tr>
+              <tr>
+                <td>Georgia</td>
+                <td>GA</td>
+                <td>Montana</td>
+                <td>MT</td>
+                <td>Texas</td>
+                <td>TX</td>
+              </tr>
+              <tr>
+                <td>Hawaii</td>
+                <td>HI</td>
+                <td>Nebraska</td>
+                <td>NE</td>
+                <td>Utah</td>
+                <td>UT</td>
+              </tr>
+              <tr>
+                <td>Idaho</td>
+                <td>ID</td>
+                <td>Nevada</td>
+                <td>NV</td>
+                <td>Vermont</td>
+                <td>VT</td>
+              </tr>
+              <tr>
+                <td>Illinois</td>
+                <td>IL</td>
+                <td>New Hampshire</td>
+                <td>NH</td>
+                <td>Virginia</td>
+                <td>VA</td>
+              </tr>
+              <tr>
+                <td>Indiana</td>
+                <td>IN</td>
+                <td>New Jersey</td>
+                <td>NJ</td>
+                <td>Washington</td>
+                <td>WA</td>
+              </tr>
+              <tr>
+                <td>Iowa</td>
+                <td>IA</td>
+                <td>New Mexico</td>
+                <td>NM</td>
+                <td>West Virginia</td>
+                <td>WV</td>
+              </tr>
+              <tr>
+                <td>Kansas</td>
+                <td>KS</td>
+                <td>New York</td>
+                <td>NY</td>
+                <td>Wisconsin</td>
+                <td>WI</td>
+              </tr>
+              <tr>
+                <td colspan="4"></td>
+                <td>Wyoming</td>
+                <td>WY</td>
+              </tr>
+              <tr>
+                <td colspan="4"></td>
+                <td>Washington D.C.</td>
+                <td>DC</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>📮 美国邮编系统详解</h3>
+        <p>
+          美国邮政编码（ZIP Code）系统是全球最成熟的邮政寻址系统之一，于1963年由美国邮政署（USPS）引入。"ZIP"代表"Zone Improvement Plan"，即"区域改进计划"。<br><br>
+          ZIP Code 由5位数字组成，其结构如下：<br>
+          <strong>第1位数字（0-9）：</strong>代表美国10个大区域，从东海岸到西海岸依次为0到9。例如0代表东北部各州，9代表西海岸各州。<br>
+          <strong>第2-3位数字：</strong>代表该区域内的具体分拣中心或邮政局。<br>
+          <strong>第4-5位数字：</strong>代表投递区域，通常对应一个小镇或城市的一个区域。<br><br>
+          以俄勒冈州波特兰市的邮编 97201 为例：9 表示西部地区，72 表示俄勒冈区域的分拣设施，01 表示波特兰市中心的具体投递区。美国目前约有42,000个活跃的 ZIP Code，覆盖所有州和海外领地。
+        </p>
+
+        <h3>📞 美国电话号码格式详解</h3>
+        <p>
+          美国电话号码遵循北美编号计划（NANP），完整格式为 <strong>+1 (XXX) XXX-XXXX</strong>，共11位数字。其中：<br>
+          <strong>+1：</strong>国际区号，标识北美地区<br>
+          <strong>(XXX)：</strong>3位地区区号（Area Code），标识特定地理区域<br>
+          <strong>XXX-XXXX：</strong>7位本地号码，前3位为交换号（Exchange），后4位为用户号（Subscriber Number）<br><br>
+          区号有以下规则：第一位不能是0或1；某些区号有特殊用途，如800/888/877等为免费电话号码，900系列为收费服务号码。随着手机普及，一个地区可能有多个区号，而个人号码已经不再一定与地理位置绑定。本工具生成的电话号码均遵循上述格式标准，使用对应州的真实区号。
+        </p>
+
+        <h3>🏠 美国街道地址命名规则</h3>
+        <p>
+          美国的街道命名遵循一套系统化的规则，了解这些规则有助于正确理解和使用美国地址：<br><br>
+          <strong>门牌号（House Number）：</strong>通常为数字，位于地址最前面。偶数号通常在街道的一侧，奇数号在另一侧。门牌号一般随距离市中心或参考点的距离递增。<br><br>
+          <strong>街道方向前缀：</strong>许多城市使用方向前缀来区分街道位置，如 N（北）、S（南）、E（东）、W（西），例如 "N Main St" 和 "S Main St" 是两条不同的街道。<br><br>
+          <strong>街道类型后缀：</strong>Street（St）通常是直线道路，Avenue（Ave）通常与其垂直，Boulevard（Blvd）是宽阔的多车道道路，Drive（Dr）通常是弯曲的，Court（Ct）是死胡同。<br><br>
+          <strong>公寓/单元号：</strong>如果住在多单元建筑中，地址会包含 Apt（公寓）、Suite（套房）、Unit（单元）、#（编号）等标识，后跟数字或字母编号。
+        </p>
       </div>
     </section>
 
